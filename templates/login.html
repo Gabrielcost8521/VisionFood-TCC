@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='login-style.css') }}" />
+  <title>Login - VisionFood</title>
+  <style>
+  form input,
+  form button[type="submit"] {
+    position: absolute;
+    z-index: 10;
+  }
+
+  input[name="email"] {
+    top: 358px;
+    left: 54px;
+    width: 273px;
+    height: 38px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: transparent;
+  }
+
+  input[name="senha"] {
+    top: 411px;
+    left: 54px;
+    width: 273px;
+    height: 38px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: transparent;
+  }
+
+  form button[type="submit"] {
+    top: 476px;
+    left: 107px;
+    width: 154px;
+    height: 38px;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .seta-voltar {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 24px;
+    height: 24px;
+    z-index: 20;
+  }
+
+  .seta-voltar img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+  <div class="login">
+    <div class="overlap-group-wrapper">
+      <div class="overlap-group">
+        <div class="rectangle"></div>
+        <div class="div"></div>
+        <img class="full-battery" src="https://c.animaapp.com/XiQbkc9t/img/full-battery@2x.png" />
+        <img class="wi-fi" src="https://c.animaapp.com/XiQbkc9t/img/wi-fi@2x.png" />
+        <img class="signal" src="https://c.animaapp.com/XiQbkc9t/img/signal@2x.png" />
+        <div class="text-wrapper">21:21</div>
+        <img class="heart" src="https://c.animaapp.com/XiQbkc9t/img/heart@2x.png" />
+        <div class="rectangle-2"></div>
+        <div class="rectangle-3"></div>
+        <div class="ellipse"></div>
+        <img class="profile-user" src="https://c.animaapp.com/XiQbkc9t/img/profile-user-1@2x.png" />
+        <div class="text-wrapper-2">Login</div>
+        <div class="rectangle-4"></div>
+        <div class="rectangle-5"></div>
+        <div class="text-wrapper-3">Senha:</div>
+        <div class="text-wrapper-4">Email:</div>
+        <img class="key" src="https://c.animaapp.com/XiQbkc9t/img/key@2x.png" />
+        <img class="letter" src="https://c.animaapp.com/XiQbkc9t/img/letter@2x.png" />
+        <div class="ellipse-2"></div>
+        <div class="rectangle-6"></div>
+        <div class="rectangle-7"></div>
+        <img class="img" src="https://c.animaapp.com/XiQbkc9t/img/rectangle-62.svg" />
+
+        <!-- Formulário funcional de login -->
+        <form method="POST" action="{{ url_for('login') }}">
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="senha" placeholder="Senha" required />
+          <button type="submit">Entrar</button>
+        </form>
+
+        <!-- Ícone de voltar clicável -->
+        <a href="{{ url_for('cadastro') }}" class="seta-voltar" aria-label="Voltar para cadastro">
+          <img src="https://c.animaapp.com/XiQbkc9t/img/back-arrow@2x.png" alt="Voltar">
+        </a>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
