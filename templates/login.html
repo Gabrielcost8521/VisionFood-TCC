@@ -8,62 +8,64 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='login-style.css') }}" />
   <title>Login - VisionFood</title>
   <style>
-  form input,
-  form button[type="submit"] {
-    position: absolute;
-    z-index: 10;
-  }
+    form input,
+    form button[type="submit"] {
+      position: absolute;
+      z-index: 10;
+    }
 
-  input[name="email"] {
-    top: 358px;
-    left: 54px;
-    width: 273px;
-    height: 38px;
-    border: none;
-    border-radius: 20px;
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: transparent;
-  }
+    input[name="email"] {
+      top: 365px;
+      left: 58px;
+      width: 260px;
+      height: 38px;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 10px;
+      font-size: 14px;
+      background-color: transparent;
+    }
 
-  input[name="senha"] {
-    top: 411px;
-    left: 54px;
-    width: 273px;
-    height: 38px;
-    border: none;
-    border-radius: 20px;
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: transparent;
-  }
+    input[name="senha"] {
+      top: 415px;
+      left: 58px;
+      width: 260px;
+      height: 38px;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 10px;
+      font-size: 14px;
+      background-color: transparent;
+    }
 
-  form button[type="submit"] {
-    top: 476px;
-    left: 107px;
-    width: 154px;
-    height: 38px;
-    background-color: transparent;
-    border: none;
-    color: transparent;
-    cursor: pointer;
-    z-index: 10;
-  }
+    form button[type="submit"] {
+      top: 472px;
+      left: 108px;
+      width: 144px;
+      height: 38px;
+      background-color: transparent;
+      border: none;
+      color: transparent;
+      cursor: pointer;
+      z-index: 10;
+    }
 
-  .seta-voltar {
-    position: absolute;
-    top: 22px;
-    left: 20px;
-    width: 24px;
-    height: 24px;
-    z-index: 20;
-  }
-
-  .seta-voltar img {
-    width: 100%;
-    height: auto;
-  }
-</style>
+    #erro-login {
+      position: absolute;
+      top: 525px;
+      left: 50px;
+      width: 260px;
+      background: #ffe0e0;
+      color: #b30000;
+      border-radius: 10px;
+      padding: 8px;
+      font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      z-index: 20;
+    }
+  </style>
 </head>
 <body>
   <div class="login">
@@ -92,18 +94,31 @@
         <div class="rectangle-7"></div>
         <img class="img" src="https://c.animaapp.com/XiQbkc9t/img/rectangle-62.svg" />
 
-        <!-- Formulário funcional de login -->
+        <!-- Formulário funcional -->
         <form method="POST" action="{{ url_for('login') }}">
           <input type="email" name="email" placeholder="Email" required />
           <input type="password" name="senha" placeholder="Senha" required />
           <button type="submit">Entrar</button>
         </form>
 
-        <!-- Ícone de voltar clicável -->
-        <a href="{{ url_for('cadastro') }}" class="seta-voltar" aria-label="Voltar para cadastro">
-          <img src="https://c.animaapp.com/XiQbkc9t/img/back-arrow@2x.png" alt="Voltar">
-        </a>
+        <!-- Mensagem de erro do backend -->
+        {% if erro %}
+          <div id="erro-login">{{ erro }}</div>
+        {% else %}
+          <div id="erro-login" style="display: none;"></div>
+        {% endif %}
 
+        <!-- Botão de voltar -->
+        <a href="{{ url_for('cadastro') }}" aria-label="Voltar para cadastro" style="
+          position: absolute;
+          top: 22px;
+          left: 20px;
+          width: 36px;
+          height: 36px;
+          z-index: 20;
+          background: transparent;
+          display: block;">
+        </a>
       </div>
     </div>
   </div>
