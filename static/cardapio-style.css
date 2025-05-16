@@ -72,7 +72,7 @@
   width: 71px;
   top: 20px;
   left: 12px;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-SemiBold", Helvetica;
   font-weight: 600;
   color: #000000;
   font-size: 12px;
@@ -91,9 +91,9 @@
 .cardapio .text-wrapper-2 {
   position: absolute;
   width: 355px;
-  top: 114px;
+  top: 139px;
   left: 16px;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-SemiBold Italic", Helvetica;
   font-weight: 600;
   font-style: italic;
   color: #ffffff;
@@ -105,9 +105,9 @@
 .cardapio .text-wrapper-3 {
   position: absolute;
   width: 201px;
-  top: 154px;
-  left: 13px;
-  font-family: "Inter", Helvetica;
+  top: 174px;
+  left: 12px;
+  font-family: "Inter-SemiBold Italic", Helvetica;
   font-weight: 600;
   font-style: italic;
   color: #000000;
@@ -119,10 +119,10 @@
 .cardapio .text-wrapper-4 {
   position: absolute;
   width: 140px;
-  top: 232px;
-  left: 20px;
+  top: 259px;
+  left: 12px;
   text-shadow: 0px 4px 4px #00000040;
-  font-family: "Roboto", Helvetica;
+  font-family: "Roboto-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
   color: #d9d9d9;
@@ -161,7 +161,7 @@
   position: absolute;
   width: 94px;
   height: 20px;
-  top: 288px;
+  top: 304px;
   left: 5px;
   background-color: #d9d9d9;
   border-radius: 15px;
@@ -171,7 +171,7 @@
   position: absolute;
   width: 94px;
   height: 20px;
-  top: 288px;
+  top: 304px;
   left: 108px;
   background-color: #4c92ee;
   border-radius: 15px;
@@ -181,7 +181,7 @@
   position: absolute;
   width: 94px;
   height: 20px;
-  top: 288px;
+  top: 304px;
   left: 211px;
   background-color: #d9d9d9;
   border-radius: 15px;
@@ -190,10 +190,10 @@
 .cardapio .text-wrapper-5 {
   position: absolute;
   width: 79px;
-  top: 288px;
+  top: 304px;
   left: 22px;
   text-shadow: 0px 4px 4px #00000040;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
   color: #000000;
@@ -205,10 +205,10 @@
 .cardapio .text-wrapper-6 {
   position: absolute;
   width: 68px;
-  top: 288px;
+  top: 304px;
   left: 131px;
   text-shadow: 0px 4px 4px #00000040;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
   color: #000000;
@@ -220,10 +220,10 @@
 .cardapio .text-wrapper-7 {
   position: absolute;
   width: 69px;
-  top: 288px;
+  top: 304px;
   left: 234px;
   text-shadow: 0px 4px 4px #00000040;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
   color: #000000;
@@ -237,7 +237,7 @@
   width: 184px;
   top: 368px;
   left: 155px;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-SemiBold Italic", Helvetica;
   font-weight: 600;
   font-style: italic;
   color: #4a3923;
@@ -251,7 +251,7 @@
   width: 182px;
   top: 392px;
   left: 154px;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 11.5px;
@@ -265,7 +265,7 @@
   position: absolute;
   left: 253px;
   text-shadow: 0px 4px 4px #00000040;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
   color: #ffffff;
@@ -279,7 +279,7 @@
   width: 184px;
   top: 522px;
   left: 155px;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-SemiBold Italic", Helvetica;
   font-weight: 600;
   font-style: italic;
   color: #4a3923;
@@ -293,7 +293,7 @@
   width: 193px;
   top: 548px;
   left: 154px;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 11.5px;
@@ -307,7 +307,7 @@
   position: absolute;
   left: 253px;
   text-shadow: 0px 4px 4px #00000040;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
   color: #ffffff;
@@ -321,7 +321,7 @@
   width: 184px;
   top: 683px;
   left: 155px;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-SemiBold Italic", Helvetica;
   font-weight: 600;
   font-style: italic;
   color: #4a3923;
@@ -335,7 +335,7 @@
   width: 182px;
   top: 709px;
   left: 154px;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 11.5px;
@@ -349,7 +349,7 @@
   position: absolute;
   left: 253px;
   text-shadow: 0px 4px 4px #00000040;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
   color: #ffffff;
@@ -386,7 +386,7 @@
   position: absolute;
   width: 94px;
   height: 20px;
-  top: 288px;
+  top: 304px;
   left: 314px;
   background-color: #d9d9d9;
   border-radius: 15px;
@@ -395,10 +395,10 @@
 .cardapio .text-wrapper-16 {
   position: absolute;
   width: 69px;
-  top: 288px;
+  top: 304px;
   left: 340px;
   text-shadow: 0px 4px 4px #00000040;
-  font-family: "Inter", Helvetica;
+  font-family: "Inter-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
   color: #000000;
@@ -592,4 +592,18 @@
   height: 12px;
   top: 672px;
   left: 330px;
+}
+
+.cardapio .text-wrapper-17 {
+  position: absolute;
+  width: 101px;
+  top: 96px;
+  left: 16px;
+  font-family: "Inter-Italic", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
 }
