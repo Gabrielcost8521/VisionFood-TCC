@@ -1,0 +1,420 @@
+.restaurantes {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.restaurantes .overlap-group-wrapper {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 360px;
+  height: 800px;
+}
+
+.restaurantes .overlap-group {
+  position: relative;
+  width: 401px;
+  height: 864px;
+  top: -11px;
+}
+
+.restaurantes .rectangle {
+  position: absolute;
+  width: 360px;
+  height: 800px;
+  top: 11px;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(55, 97, 179, 1) 0%,
+    rgba(24, 41, 77, 1) 100%
+  );
+}
+
+.restaurantes .div {
+  position: absolute;
+  width: 131px;
+  height: 39px;
+  top: 0;
+  left: 113px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+.restaurantes .full-battery {
+  position: absolute;
+  width: 24px;
+  height: 21px;
+  top: 17px;
+  left: 329px;
+}
+
+.restaurantes .wi-fi {
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  top: 18px;
+  left: 309px;
+}
+
+.restaurantes .signal {
+  position: absolute;
+  width: 15px;
+  height: 16px;
+  top: 19px;
+  left: 292px;
+}
+
+.restaurantes .text-wrapper {
+  position: absolute;
+  width: 71px;
+  top: 20px;
+  left: 12px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.restaurantes .heart {
+  position: absolute;
+  width: 15px;
+  height: 16px;
+  top: 21px;
+  left: 45px;
+}
+
+.restaurantes .rectangle-2 {
+  position: absolute;
+  width: 318px;
+  height: 37px;
+  top: 99px;
+  left: 25px;
+  background-color: #dcdada;
+  border-radius: 20px;
+}
+
+.restaurantes .search {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 104px;
+  left: 34px;
+}
+
+.restaurantes .p {
+  position: absolute;
+  width: 269px;
+  top: 110px;
+  left: 68px;
+  opacity: 0.4;
+  font-family: "Inter", Helvetica;
+  font-weight: 200;
+  font-style: italic;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.restaurantes .text-wrapper-2 {
+  position: absolute;
+  width: 382px;
+  top: 153px;
+  left: 19px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.restaurantes .text-wrapper-3 {
+  position: absolute;
+  width: 311px;
+  top: 187px;
+  left: 19px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.restaurantes .rectangle-3 {
+  position: absolute;
+  width: 325px;
+  height: 134px;
+  top: 233px;
+  left: 17px;
+  background-color: #734d04;
+  border-radius: 10px;
+}
+
+.restaurantes .text-wrapper-4 {
+  position: absolute;
+  width: 133px;
+  top: 243px;
+  left: 153px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.restaurantes .text-wrapper-5 {
+  position: absolute;
+  width: 178px;
+  top: 279px;
+  left: 153px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  font-style: italic;
+  color: #fffafa;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.restaurantes .rectangle-4 {
+  position: absolute;
+  width: 326px;
+  height: 134px;
+  top: 399px;
+  left: 17px;
+  background-color: #d0a369;
+  border-radius: 10px;
+}
+
+.restaurantes .text-wrapper-6 {
+  position: absolute;
+  width: 156px;
+  top: 410px;
+  left: 153px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #fffbfb;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.restaurantes .text-wrapper-7 {
+  top: 447px;
+  left: 153px;
+  color: #fffefe;
+  position: absolute;
+  width: 198px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.restaurantes .rectangle-5 {
+  position: absolute;
+  width: 326px;
+  height: 134px;
+  top: 566px;
+  left: 19px;
+  background-color: #833d3b;
+  border-radius: 10px;
+}
+
+.restaurantes .text-wrapper-8 {
+  position: absolute;
+  width: 181px;
+  top: 575px;
+  left: 155px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.restaurantes .rectangle-6 {
+  position: absolute;
+  width: 326px;
+  height: 134px;
+  top: 730px;
+  left: 17px;
+  background-color: #325ba6;
+  border-radius: 10px;
+}
+
+.restaurantes .text-wrapper-9 {
+  top: 781px;
+  left: 155px;
+  color: #ffffff;
+  position: absolute;
+  width: 198px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.restaurantes .text-wrapper-10 {
+  position: absolute;
+  width: 181px;
+  top: 744px;
+  left: 153px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.restaurantes .text-wrapper-11 {
+  top: 638px;
+  left: 155px;
+  color: #ffffff;
+  position: absolute;
+  width: 198px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.restaurantes .images {
+  width: 109px;
+  height: 66px;
+  top: 745px;
+  position: absolute;
+  left: 30px;
+}
+
+.restaurantes .img {
+  width: 108px;
+  height: 108px;
+  top: 579px;
+  object-fit: cover;
+  position: absolute;
+  left: 30px;
+}
+
+.restaurantes .images-2 {
+  width: 108px;
+  height: 108px;
+  top: 246px;
+  object-fit: cover;
+  position: absolute;
+  left: 30px;
+}
+
+.restaurantes .images-3 {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 413px;
+  left: 30px;
+  object-fit: cover;
+}
+
+.restaurantes .ellipse {
+  top: 48px;
+  left: 312px;
+  transform: rotate(180deg);
+  position: absolute;
+  width: 27px;
+  height: 26px;
+  background-color: #d9d9d9;
+  border-radius: 13.5px / 13px;
+}
+
+.restaurantes .rectangle-7 {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 57px;
+  left: 324px;
+  background-color: #17294c;
+  border-radius: 20px;
+  transform: rotate(-141.13deg);
+}
+
+.restaurantes .rectangle-8 {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 63px;
+  left: 324px;
+  background-color: #17294c;
+  border-radius: 20px;
+  transform: rotate(141.13deg);
+}
+
+.restaurantes .rectangle-9 {
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  top: 60px;
+  left: 316px;
+}
+
+.restaurantes .ellipse-2 {
+  top: 50px;
+  left: 20px;
+  position: absolute;
+  width: 27px;
+  height: 26px;
+  background-color: #d9d9d9;
+  border-radius: 13.5px / 13px;
+}
+
+.restaurantes .rectangle-10 {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 59px;
+  left: 25px;
+  background-color: #17294c;
+  border-radius: 20px;
+  transform: rotate(-38.87deg);
+}
+
+.restaurantes .rectangle-11 {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 65px;
+  left: 25px;
+  background-color: #17294c;
+  border-radius: 20px;
+  transform: rotate(38.87deg);
+}
+
+.restaurantes .rectangle-12 {
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  top: 62px;
+  left: 28px;
+}
