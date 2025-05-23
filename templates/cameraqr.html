@@ -1,36 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="camera-qr" data-model-id="2:12">
-      <div class="overlap-group-wrapper">
-        <div class="overlap-group">
-          <div class="rectangle"></div>
-          <div class="div"></div>
-          <img class="full-battery" src="https://c.animaapp.com/K2AOKRfM/img/full-battery@2x.png" />
-          <img class="wi-fi" src="https://c.animaapp.com/K2AOKRfM/img/wi-fi@2x.png" />
-          <img class="signal" src="https://c.animaapp.com/K2AOKRfM/img/signal@2x.png" />
-          <div class="text-wrapper">21:21</div>
-          <img class="heart" src="https://c.animaapp.com/K2AOKRfM/img/heart@2x.png" />
-          <div class="frame"><img class="camera" src="https://c.animaapp.com/K2AOKRfM/img/camera@2x.png" /></div>
-          <p class="p">Leia o Qr Code e visualize o cardápio</p>
-          <div class="text-wrapper-2">ou insira o código</div>
-          <div class="ellipse"></div>
-          <div class="rectangle-2"></div>
-          <div class="rectangle-3"></div>
-          <img class="img" src="https://c.animaapp.com/K2AOKRfM/img/rectangle-62.svg" />
-          <div class="ellipse-2"></div>
-          <div class="rectangle-4"></div>
-          <div class="rectangle-5"></div>
-          <img class="rectangle-6" src="https://c.animaapp.com/K2AOKRfM/img/rectangle-66.svg" />
-          <div class="rectangle-7"></div>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camera QR - VisionFood</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='cameraqr-globals.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='cameraqr-style.css') }}">
+</head>
+<body>
+  <div class="camera-qr">
+    <div class="overlap-group-wrapper">
+      <div class="overlap-group">
+        <div class="rectangle"></div>
+        <div class="div"></div>
+        <img class="full-battery" src="https://c.animaapp.com/qpuS7hGq/img/full-battery@2x.png" />
+        <img class="wi-fi" src="https://c.animaapp.com/qpuS7hGq/img/wi-fi@2x.png" />
+        <img class="signal" src="https://c.animaapp.com/qpuS7hGq/img/signal@2x.png" />
+        <div class="text-wrapper">21:21</div>
+        <img class="heart" src="https://c.animaapp.com/qpuS7hGq/img/heart@2x.png" />
+
+        <!-- Botão de voltar -->
+        <div class="ellipse"></div>
+        <div class="rectangle-2"></div>
+        <div class="rectangle-3"></div>
+        <a href="{{ url_for('restaurantes') }}">
+          <img class="img" src="https://c.animaapp.com/qpuS7hGq/img/rectangle-62.svg" alt="Voltar">
+        </a>
+
+        <!-- Área decorativa -->
+        <div class="ellipse-2"></div>
+        <div class="rectangle-4"></div>
+        <div class="rectangle-5"></div>
+        <div class="rectangle-6"></div>
+
+        <!-- Título -->
+        <p class="p">Leia o Qr Code e<br />visualize o cardápio</p>
+
+        <!-- Quadro da câmera -->
+        <div class="frame">
+          <img class="camera" src="https://c.animaapp.com/qpuS7hGq/img/camera-1@2x.png" alt="Câmera" />
         </div>
+
+        <!-- Texto e campo para inserir o código -->
+        <div class="text-wrapper-2">ou insira o código</div>
+        <div class="rectangle-7"></div>
+
+        <!-- Input funcional -->
+        <input type="text" id="codigo" placeholder="Digite o código aqui..." maxlength="6"
+          style="
+            position: absolute;
+            top: 600px;
+            left: 84px;
+            width: 210px;
+            height: 28px;
+            background-color: transparent;
+            border: none;
+            border-radius: 20px;
+            padding-left: 12px;
+            font-size: 14px;
+            z-index: 10;
+          " />
+
+        <!-- Script de validação do código -->
+        <script>
+          document.getElementById('codigo').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+              event.preventDefault();
+              const codigo = this.value.trim().toUpperCase();
+              if (codigo === 'ABC123') {
+                window.location.href = '/cardapio';
+              } else {
+                alert('Código inválido. Tente novamente.');
+              }
+            }
+          });
+        </script>
+
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>

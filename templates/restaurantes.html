@@ -3,11 +3,12 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='restaurantes-globals.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='restaurantes-style.css') }}" />
+    <title>Restaurantes - VisionFood</title>
   </head>
   <body>
-    <div class="restaurantes" data-model-id="2:20">
+    <div class="restaurantes">
       <div class="overlap-group-wrapper">
         <div class="overlap-group">
           <div class="rectangle"></div>
@@ -25,6 +26,12 @@
           <div class="rectangle-3"></div>
           <div class="text-wrapper-4">Fiorentina.</div>
           <div class="text-wrapper-5">Amazonas Shopping, 2 Piso.</div>
+          <img class="images" src="https://c.animaapp.com/h37XWKYs/img/images@2x.png" />
+          <!-- Link invisível sobre o card Fiorentina -->
+          <a href="{{ url_for('cameraqr') }}" style="position: absolute; top: 255px; left: 37px; width: 284px; height: 80px; z-index: 10;">
+            <span style="display: block; width: 100%; height: 100%;"></span>
+          </a>
+
           <div class="rectangle-4"></div>
           <div class="text-wrapper-6">Coco Bambu.</div>
           <div class="text-wrapper-7">Amazonas Shopping, 2 Piso.</div>
@@ -34,7 +41,6 @@
           <div class="text-wrapper-9">Amazonas Shopping, 2 Piso.</div>
           <div class="text-wrapper-10">Tio Armênio.</div>
           <div class="text-wrapper-11">Amazonas Shopping, 2 Piso.</div>
-          <img class="images" src="https://c.animaapp.com/h37XWKYs/img/images@2x.png" />
           <img class="img" src="https://c.animaapp.com/h37XWKYs/img/images--2-@2x.png" />
           <img class="images-2" src="https://c.animaapp.com/h37XWKYs/img/images-1@2x.png" />
           <img class="images-3" src="https://c.animaapp.com/h37XWKYs/img/images--1---1--1@2x.png" />
