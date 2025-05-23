@@ -1,13 +1,12 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
 import sqlite3
 
 app = Flask(__name__)
+app.secret_key = 'visionfood_seguro_123'  # Chave de segurança para sessões
 
-# Conectar ao banco de dados SQLite
 def connect_db():
     return sqlite3.connect('visionfood.db')
 
-# Criar a tabela se não existir
 def create_table():
     conn = connect_db()
     cursor = conn.cursor()
@@ -22,15 +21,12 @@ def create_table():
     conn.commit()
     conn.close()
 
-# Executa a criação da tabela ao iniciar
 create_table()
 
-# Rota inicial redireciona para /cadastro
 @app.route('/')
 def index():
     return redirect(url_for('cadastro'))
 
-# Rota de cadastro
 @app.route('/cadastro', methods=['GET', 'POST'])
 def cadastro():
     if request.method == 'POST':
@@ -49,7 +45,6 @@ def cadastro():
             return "Erro: este e-mail já está cadastrado."
     return render_template('cadastro.html')
 
-# Rota de login
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -63,16 +58,25 @@ def login():
         conn.close()
 
         if user:
-            return redirect(url_for('home'))
+            session['nome'] = user[1]  # Armazena o nome do usuário na sessão
+            return redirect(url_for('restaurantes'))
         else:
             return "Credenciais inválidas. Tente novamente."
 
     return render_template('login.html')
 
-# Página após login
-@app.route('/home')
-def home():
-    return "<h1 style='text-align:center; font-family:Arial;'>Login realizado com sucesso!<br>Bem-vindo ao VisionFood</h1>"
+@app.route('/restaurantes')
+def restaurantes():
+    nome = session.get('nome', 'Usuário')
+    return render_template('restaurantes.html', nome=nome)
+
+@app.route('/cameraqr')
+def cameraqr():
+    return render_template('cameraqr.html')
+
+@app.route('/cardapio')
+def cardapio():
+    return render_template('cardapio.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
